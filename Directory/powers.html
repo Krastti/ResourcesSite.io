@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Свойства степеней</title>
+    <script id="MathJax-script"
+            async src="https://cdn.jsdelivr.net/npm/mathjax@latest/es5/tex-mml-chtml.js">
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        ol {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .formula {
+            font-size: 1.1em;
+        }
+        .power-item::before {
+            content: counter(power-counter) ". ";
+            counter-increment: power-counter;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        ol.power-list {
+            counter-reset: power-counter;
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+<h1>Свойства степеней</h1>
+<ol class="power-list">
+    <li class="formula">\(a^0 = 1\), при \(a \ne 0\)</li>
+    <li class="formula">\(a^1 = a\)</li>
+    <li class="formula">\((-a)^n = a^n\), если \(n\) — чётное</li>
+    <li class="formula">\((-a)^n = -a^n\), если \(n\) — нечётное</li>
+    <li class="formula">\((ab)^n = a^n b^n\)</li>
+    <li class="formula">\(\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}\), при \(b \ne 0\)</li>
+    <li class="formula">\(a^{-n} = \frac{1}{a^n}\), при \(a \ne 0\)</li>
+    <li class="formula">\(\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^n\), при \(a,b \ne 0\)</li>
+    <li class="formula">\(a^n \cdot a^m = a^{n+m}\)</li>
+    <li class="formula">\(\frac{a^n}{a^m} = a^{n-m}\), при \(a \ne 0\)</li>
+    <li class="formula">\((a^n)^m = a^{n \cdot m}\)</li>
+</ol>
+<p><a href="../index.html">← Назад к оглавлению</a></p>
+</body>
+</html>

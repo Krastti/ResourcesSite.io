@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Формулы сокращённого умножения</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+        .formula {
+            font-size: 1.1em;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>Формулы сокращённого умножения</h1>
+
+<!-- Квадраты -->
+<div class="section">
+    <h2>Квадраты</h2>
+    <table>
+        <tr><td>\((a + b)^2 = a^2 + 2ab + b^2\)</td></tr>
+        <tr><td>\((a - b)^2 = a^2 - 2ab + b^2\)</td></tr>
+    </table>
+</div>
+
+<!-- Разность квадратов -->
+<div class="section">
+    <h2>Разность квадратов</h2>
+    <table>
+        <tr><td>\(a^2 - b^2 = (a - b)(a + b)\)</td></tr>
+    </table>
+</div>
+
+<!-- Кубы -->
+<div class="section">
+    <h2>Кубы</h2>
+    <table>
+        <tr><td>\((a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3\)</td></tr>
+        <tr><td>\((a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3\)</td></tr>
+        <tr><td>\(a^3 + b^3 = (a + b)(a^2 - ab + b^2)\)</td></tr>
+        <tr><td>\(a^3 - b^3 = (a - b)(a^2 + ab + b^2)\)</td></tr>
+    </table>
+</div>
+
+<!-- Четвёртые степени -->
+<div class="section">
+    <h2>Четвёртые степени</h2>
+    <table>
+        <tr><td>\((a + b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4\)</td></tr>
+        <tr><td>\((a - b)^4 = a^4 - 4a^3b + 6a^2b^2 - 4ab^3 + b^4\)</td></tr>
+        <tr><td>\(a^4 - b^4 = (a - b)(a + b)(a^2 + b^2)\)</td></tr>
+    </table>
+</div>
+
+<!-- Бином Ньютона (общий случай) -->
+<div class="section">
+    <h2>Общий случай (бином Ньютона)</h2>
+    <table>
+        <tr><td>\((a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k\)</td></tr>
+        <tr><td>\((a - b)^n = \sum_{k=0}^{n} (-1)^k \binom{n}{k} a^{n-k} b^k\)</td></tr>
+    </table>
+</div>
+
+<p class="back-link"><a href="../index.html">← Назад к оглавлению</a></p>
+</body>
+</html>

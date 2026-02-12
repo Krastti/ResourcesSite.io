@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Свойства логарифмов</title>
+    <script id="MathJax-script"
+            async src="https://cdn.jsdelivr.net/npm/mathjax@latest/es5/tex-mml-chtml.js">
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        ol {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .formula {
+            font-size: 1.1em;
+        }
+        .log-item::before {
+            content: counter(log-counter) ". ";
+            counter-increment: log-counter;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        ol.log-list {
+            counter-reset: log-counter;
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+<h1>Свойства логарифмов</h1>
+<ol class="log-list">
+    <li class="formula">\(\log_a 1 = 0\)</li>
+    <li class="formula">\(\log_a a = 1\)</li>
+    <li class="formula">\(\log_a \frac{1}{a} = -1\)</li>
+    <li class="formula">\(\log_{a^k} a = \frac{1}{k}\)</li>
+    <li class="formula">\(\log_a a^m = m\)</li>
+    <li class="formula">\(\log_{a^k} a^m = \frac{m}{k}\)</li>
+    <li class="formula">\(\log_a (bc) = \log_a b + \log_a c\)</li>
+    <li class="formula">\(\log_a \left(\frac{b}{c}\right) = \log_a b - \log_a c\)</li>
+    <li class="formula">\(\log_{a^k} b = \frac{1}{k} \log_a b\)</li>
+    <li class="formula">\(\log_a b^m = m \log_a b\)</li>
+    <li class="formula">\(\log_{a^k} b^m = \frac{m}{k} \log_a b\)</li>
+    <li class="formula">\(\log_a b = \frac{\log_c b}{\log_c a}\)</li>
+    <li class="formula">\(\log_a b = \frac{1}{\log_b a}\)</li>
+    <li class="formula">\(\log_a b \cdot \log_c d = \log_c b \cdot \log_a d\)</li>
+    <li class="formula">\(a^{\log_c b} = b^{\log_c a}\)</li>
+</ol>
+<p><a href="../index.html">← Назад к оглавлению</a></p>
+</body>
+</html>

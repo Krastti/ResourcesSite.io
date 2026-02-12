@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица интегралов</title>
+    <script id="MathJax-script"
+            async src="https://cdn.jsdelivr.net/npm/mathjax@latest/es5/tex-mml-chtml.js">
+    </script>
+    <script>
+        window.MathJax = {
+            loader: { load: ['input/tex', 'output/chtml'] },
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: {
+                scale: 1,
+                minScale: 0.7
+            },
+            startup: {
+                typeset: true,
+                ready: () => {
+                    MathJax.startup.defaultReady();
+                    console.log('MathJax готов');
+                },
+            }
+        };
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+        .formula {
+            font-size: 1.1em;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .condition {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+<h1>Таблица интегралов</h1>
+
+<!-- 1. Интегралы рациональных функций -->
+<div class="section">
+    <h2>1. Интегралы рациональных функций</h2>
+    <h4>Таблица №1</h4>
+    <table>
+        <tr><td>\(\displaystyle\int x^n \, dx = \frac{x^{n+1}}{n+1} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int (ax + b)^n \, dx = \frac{(ax + b)^{n+1}}{a(n+1)} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{x} = \ln|x| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{ax + b} = \frac{1}{a} \ln|ax + b| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{ax + b}{cx + d} \, dx = \frac{a}{c}x + \frac{bc - ad}{c^2} \ln|cx + d| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{x \, dx}{ax + b} = \frac{1}{a^2} \bigl(b + ax - b \ln|ax + b|\bigr) + C\)</td></tr>
+    </table>
+    <h4>Таблица №2</h4>
+    <table>
+        <tr><td>\(\displaystyle\int \frac{dx}{x^2 - a^2} = \frac{1}{2a} \ln\left|\frac{x - a}{x + a}\right| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{x \, dx}{x^2 - a^2} = \frac{1}{2} \ln|x^2 - a^2| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{x^2 + a^2} = \frac{1}{a} \arctan\!\left(\frac{x}{a}\right) + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{x \, dx}{x^2 + a^2} = \frac{1}{2} \ln(x^2 + a^2) + C\)</td></tr>
+
+    </table>
+    <h4>Таблица №3</h4>
+    <table>
+        <tr><td>\(\displaystyle\int \frac{x^2 \, dx}{ax + b} = \frac{1}{a^3} \left[ \frac{1}{2}(ax + b)^2 - 2b(ax + b) + b^2 \ln|ax + b| \right] + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{x(ax + b)} = \frac{1}{b} \ln\left| \frac{ax + b}{x} \right| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{x^2(ax + b)} = -\frac{1}{bx} + \frac{a}{b^2} \ln\left| \frac{ax + b}{x} \right| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{x \, dx}{(ax + b)^2} = \frac{1}{a^2} \left( \ln|ax + b| + \frac{b}{ax + b} \right) + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{x^2 \, dx}{(ax + b)^2} = \frac{1}{a^3} \left( b + ax - 2b \ln|ax + b| - \frac{b^2}{ax + b} \right) + C\)</td></tr>
+    </table>
+</div>
+
+<!-- 2. Интегралы трансцендентных функций -->
+<div class="section">
+    <h2>2. Интегралы трансцендентных функций</h2>
+    <h4>Таблица №1</h4>
+    <table>
+        <tr><td>\(\displaystyle\int e^x \, dx = e^x + C\)</td></tr>
+        <tr><td>\(\displaystyle\int a^x \, dx = \frac{a^x}{\ln|a|} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{x \ln x} = \ln|\ln x| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \ln x \, dx = x \ln x - x + C\)</td></tr>
+        <tr><td>\(\displaystyle\int e^{ax} \, dx = \frac{e^{ax}}{a} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int x e^{ax} \, dx = \frac{e^{ax}}{a^2}(ax - 1) + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{a^x}{x^n} \, dx = -\frac{a^x}{(n-1)x^{n-1}} + \frac{\ln a}{n-1} \int \frac{a^x}{x^{n-1}} \, dx\)</td></tr>
+    </table>
+    <h4>Таблица №2</h4>
+    <table>
+        <tr><td>\(\displaystyle\int e^{ax} \ln x \, dx = \frac{e^{ax} \ln x}{a} - \frac{1}{a} \int \frac{e^{ax}}{x} \, dx\)</td></tr>
+        <tr><td>\(\displaystyle\int x^n \ln^m x \, dx = \frac{x^{n+1}}{n+1} \ln^m x - \frac{m}{n+1} \int x^n \ln^{m-1} x \, dx\)</td></tr>
+        <tr><td>\(\displaystyle\int x^n \ln x \, dx = x^{n+1} \left( \frac{\ln x}{n+1} - \frac{1}{(n+1)^2} \right) + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{x^n}{\ln^m x} \, dx = -\frac{x^{n+1}}{(m-1)\ln^{m-1} x} + \frac{n+1}{m-1} \int \frac{x^n}{\ln^{m-1} x} \, dx\)</td></tr>
+
+    </table>
+</div>
+
+<!-- 3. Интегралы иррациональных функций -->
+<div class="section">
+    <h2>3. Интегралы иррациональных функций</h2>
+    <table>
+        <tr><td>\(\displaystyle\int \frac{dx}{\sqrt{ax + b}} = \frac{2}{a} \sqrt{ax + b} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \sqrt{ax + b} \, dx = \frac{2}{3a} (ax + b)^{3/2} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{x \, dx}{\sqrt{ax + b}} = \frac{2(2ax - 2b)}{3a^2} \sqrt{ax + b} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int x \sqrt{ax + b} \, dx = \frac{2(3ax - 2b)}{15a^2} (ax + b)^{3/2} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{(x + c)\sqrt{ax + b}} = \frac{1}{\sqrt{b - ac}} \ln\left| \frac{\sqrt{ax + b} - \sqrt{b - ac}}{\sqrt{ax + b} + \sqrt{b - ac}} \right| + C\) <div class="condition">(при \(b - ac > 0\))</div></td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{(x + c)\sqrt{ax + b}} = \frac{1}{\sqrt{ac - b}} \arctan\!\left( \sqrt{ \frac{ax + b}{ac - b} } \right) + C\) <div class="condition">(при \(b - ac < 0\))</div></td></tr>
+        <tr><td>\(\displaystyle\int \frac{\sqrt{ax + b}}{cx + d} \, dx = \frac{1}{c} \sqrt{(ax + b)(cx + d)} - \frac{ad - bc}{c\sqrt{ac}} \arctan\!\left( \sqrt{ \frac{a(cx + d)}{c(ax + b)} } \right) + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{x \sqrt{ax + b}} = \frac{1}{\sqrt{b}} \ln\left| \frac{\sqrt{ax + b} - \sqrt{b}}{\sqrt{ax + b} + \sqrt{b}} \right| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{x \sqrt{ax + b}} = \frac{2}{\sqrt{-b}} \arctan\!\left( \sqrt{ \frac{ax + b}{-b} } \right) + C\) <div class="condition">(при \(b < 0\))</div></td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{x^2 \sqrt{ax + b}} = -\frac{\sqrt{ax + b}}{bx} - \frac{a}{2b} \int \frac{dx}{x \sqrt{ax + b}}\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{\sqrt{a - x}}{\sqrt{b + x}} \, dx = \sqrt{(a - x)(b + x)} + (a + b) \arcsin\!\left( \sqrt{ \frac{x + b}{a + b} } \right) + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{\sqrt{a + x}}{\sqrt{b - x}} \, dx = -\sqrt{(a + x)(b - x)} - (a + b) \arcsin\!\left( \sqrt{ \frac{b - x}{a + b} } \right) + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{\sqrt{ax^2 + bx + c}} = \frac{1}{\sqrt{a}} \ln\left| 2ax + b + 2\sqrt{a(ax^2 + bx + c)} \right| + C\) <div class="condition">(при \(a > 0\))</div></td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{\sqrt{ax^2 + bx + c}} = \frac{1}{\sqrt{-a}} \arcsin\!\left( \frac{2ax + b}{\sqrt{b^2 - 4ac}} \right) + C\) <div class="condition">(при \(a < 0\), \(b^2 - 4ac > 0\))</div></td></tr>
+        <tr><td>\(\displaystyle\int \sqrt{x^2 + a^2} \, dx = \frac{x}{2} \sqrt{x^2 + a^2} + \frac{a^2}{2} \ln\left| x + \sqrt{x^2 + a^2} \right| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \sqrt{x^2 - a^2} \, dx = \frac{x}{2} \sqrt{x^2 - a^2} - \frac{a^2}{2} \ln\left| x + \sqrt{x^2 - a^2} \right| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{\sqrt{x^2 + a^2}} = \ln\left| x + \sqrt{x^2 + a^2} \right| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{\sqrt{x^2 - a^2}} = \ln\left| x + \sqrt{x^2 - a^2} \right| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{x \, dx}{\sqrt{x^2 + a^2}} = \sqrt{x^2 + a^2} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{x \, dx}{\sqrt{x^2 - a^2}} = \sqrt{x^2 - a^2} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{x \sqrt{x^2 + a^2}} = -\frac{1}{a} \operatorname{arsinh}\!\left( \frac{a}{|x|} \right) + C = -\frac{1}{a} \ln\left| \frac{a + \sqrt{x^2 + a^2}}{x} \right| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{x \sqrt{x^2 - a^2}} = \frac{1}{a} \operatorname{arcsec}\!\left| \frac{x}{a} \right| + C = \frac{1}{a} \ln\left| \frac{x + \sqrt{x^2 - a^2}}{a} \right| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{\sqrt{a^2 - x^2}} = \arcsin\!\left( \frac{x}{a} \right) + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{x \, dx}{\sqrt{a^2 - x^2}} = -\sqrt{a^2 - x^2} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{x \sqrt{a^2 - x^2}} = -\frac{1}{a} \ln\left| \frac{a + \sqrt{a^2 - x^2}}{x} \right| + C\)</td></tr>
+    </table>
+</div>
+
+<!-- 4. Интегралы тригонометрических функций -->
+<div class="section">
+    <h2>4. Интегралы тригонометрических функций</h2>
+    <table>
+        <tr><td>\(\displaystyle\int \sin x \, dx = -\cos x + C\)</td><td>\(\displaystyle\int \cos x \, dx = \sin x + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \sin^2 x \, dx = \frac{x}{2} - \frac{1}{4} \sin 2x + C\)</td><td>\(\displaystyle\int \cos^2 x \, dx = \frac{x}{2} + \frac{1}{4} \sin 2x + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \sin^n x \, dx = -\frac{1}{n} \sin^{n-1} x \cos x + \frac{n-1}{n} \int \sin^{n-2} x \, dx\)</td><td>\(\displaystyle\int \cos^n x \, dx = \frac{1}{n} \cos^{n-1} x \sin x + \frac{n-1}{n} \int \cos^{n-2} x \, dx\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{\sin x} = \ln\left| \tan\!\left(\frac{x}{2}\right) \right| + C\)</td><td>\(\displaystyle\int \frac{dx}{\cos x} = \ln\left| \tan\!\left(\frac{x}{2} + \frac{\pi}{4}\right) \right| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{\sin^2 x} = -\cot x + C\)</td><td>\(\displaystyle\int \frac{dx}{\cos^2 x} = \tan x + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \sin x \cos x \, dx = -\frac{1}{4} \cos 2x + C\)</td><td></td></tr>
+        <tr><td>\(\displaystyle\int \sin^2 x \cos x \, dx = \frac{1}{3} \sin^3 x + C\)</td><td>\(\displaystyle\int \sin x \cos^2 x \, dx = -\frac{1}{3} \cos^3 x + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \sin^2 x \cos^2 x \, dx = \frac{1}{8}x - \frac{1}{32} \sin 4x + C\)</td><td></td></tr>
+        <tr><td>\(\displaystyle\int \tan x \, dx = -\ln|\cos x| + C\)</td><td>\(\displaystyle\int \cot x \, dx = \ln|\sin x| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{\sin x}{\cos^2 x} \, dx = \frac{1}{\cos x} + C\)</td><td>\(\displaystyle\int \frac{\sin^2 x}{\cos^2 x} \, dx = \tan x - x + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{\sin^2 x}{\cos x} \, dx = \ln\left| \tan\!\left(\frac{x}{2} + \frac{\pi}{4}\right) \right| - \sin x + C\)</td><td>\(\displaystyle\int \frac{\cos^2 x}{\sin x} \, dx = -\frac{1}{\sin x} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{\cos^2 x}{\sin^2 x} \, dx = \ln\left| \tan\!\left(\frac{x}{2}\right) \right| + \cos x + C\)</td><td></td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{\sin x \cos x} = \ln\left| \tan x \right| + C\)</td><td></td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{\sin x \cos^2 x} = -\frac{1}{\sin x} + \ln\left| \tan\!\left(\frac{x}{2}\right) \right| + C\)</td><td>\(\displaystyle\int \frac{dx}{\sin^2 x \cos x} = \frac{1}{\cos x} + \ln\left| \tan\!\left(\frac{x}{2}\right) \right| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{\sin^n x} = -\frac{1}{n-1} \cdot \frac{\cos x}{\sin^{n-1} x} + \frac{n-2}{n-1} \int \frac{dx}{\sin^{n-2} x}\)</td><td>\(\displaystyle\int \frac{dx}{\cos^n x} = \frac{1}{n-1} \cdot \frac{\sin x}{\cos^{n-1} x} + \frac{n-2}{n-1} \int \frac{dx}{\cos^{n-2} x}\)</td></tr>
+        <tr><td>\(\displaystyle\int \tan^n x \, dx = \frac{\tan^{n-1} x}{n-1} - \int \tan^{n-2} x \, dx\)</td><td>\(\displaystyle\int \cot^n x \, dx = -\frac{\cot^{n-1} x}{n-1} - \int \cot^{n-2} x \, dx\)</td></tr>
+        <tr><td>\(\displaystyle\int \sin^n x \cos^m x \, dx = -\frac{\cos^{m+1} x \sin^{n-1} x}{n + m} + \frac{n-1}{n + m} \int \sin^{n-2} x \cos^m x \, dx\)</td><td>\(\displaystyle\int \sin^n x \cos^m x \, dx = \frac{\sin^{n+1} x \cos^{m-1} x}{n + m} + \frac{m-1}{n + m} \int \sin^n x \cos^{m-2} x \, dx\)</td></tr>
+        <tr><td>\(\displaystyle\int \arcsin x \, dx = x \arcsin x + \sqrt{1 - x^2} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \arctan x \, dx = x \arctan x - \ln\sqrt{1 + x^2} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \sinh x \, dx = \cosh x + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \cosh x \, dx = \sinh x + C\)</td></tr>
+    </table>
+</div>
+
+<!-- 5. Сложные интегральные функции -->
+<div class="section">
+    <h2>5. Сложные интегральные функции</h2>
+    <table>
+        <tr><td>\(\displaystyle\int \frac{dx}{(x + a)(x + b)} = \frac{1}{a - b} \ln\left|\frac{x + b}{x + a}\right| + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{x \, dx}{(x + a)(x + b)} = \frac{1}{a - b} \bigl(a \ln|x + a| - b \ln|x + b|\bigr) + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{(x^2 + a^2)^2} = \frac{1}{2a^2} \cdot \frac{x}{x^2 + a^2} + \frac{1}{2a^3} \arctan\!\left(\frac{x}{a}\right) + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{x \, dx}{(x^2 + a^2)^2} = -\frac{1}{2} \cdot \frac{1}{x^2 + a^2} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{x \, dx}{(x^2 + a^2)^3} = -\frac{1}{4} \cdot \frac{1}{(x^2 + a^2)^2} + C\)</td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{ax^2 + bx + c} = \frac{1}{\sqrt{b^2 - 4ac}} \ln\left| \frac{2ax + b - \sqrt{b^2 - 4ac}}{2ax + b + \sqrt{b^2 - 4ac}} \right| + C\) <div class="condition">(при \(b^2 - 4ac > 0\))</div></td></tr>
+        <tr><td>\(\displaystyle\int \frac{dx}{ax^2 + bx + c} = \frac{2}{\sqrt{4ac - b^2}} \arctan\!\left( \frac{2ax + b}{\sqrt{4ac - b^2}} \right) + C\) <div class="condition">(при \(b^2 - 4ac < 0\))</div></td></tr>
+        <tr><td>\(\displaystyle\int \frac{x \, dx}{ax^2 + bx + c} = \frac{1}{2a} \ln|ax^2 + bx + c| - \frac{b}{2a} \int \frac{dx}{ax^2 + bx + c}\)</td></tr>
+
+    </table>
+</div>
+
+<p class="back-link"><a href="../index.html">← Назад к оглавлению</a></p>
+</body>
+</html>

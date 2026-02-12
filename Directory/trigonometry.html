@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тригонометрические формулы</title>
+    <script id="MathJax-script"
+            async src="https://cdn.jsdelivr.net/npm/mathjax@latest/es5/tex-mml-chtml.js">
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+        .formula {
+            font-size: 1.1em;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>Тригонометрические формулы</h1>
+
+<!-- 1. Основные тригонометрические тождества -->
+<div class="section">
+    <h2>1. Основные тригонометрические тождества</h2>
+    <table>
+        <tr><td>\(\sin^2\alpha + \cos^2\alpha = 1\)</td></tr>
+        <tr><td>\(\operatorname{tg}\alpha = \dfrac{\sin\alpha}{\cos\alpha}\)</td></tr>
+        <tr><td>\(\operatorname{ctg}\alpha = \dfrac{\cos\alpha}{\sin\alpha}\)</td></tr>
+        <tr><td>\(\operatorname{tg}\alpha \cdot \operatorname{ctg}\alpha = 1\)</td></tr>
+        <tr><td>\(\dfrac{1}{\cos^2\alpha} = \operatorname{tg}^2\alpha + 1\)</td></tr>
+        <tr><td>\(\dfrac{1}{\sin^2\alpha} = \operatorname{ctg}^2\alpha + 1\)</td></tr>
+    </table>
+</div>
+
+<!-- 2. Чётность, нечётность -->
+<div class="section">
+    <h2>2. Чётность и нечётность</h2>
+    <table>
+        <tr><td>\(\sin(-\alpha) = -\sin\alpha\)</td></tr>
+        <tr><td>\(\cos(-\alpha) = \cos\alpha\)</td></tr>
+        <tr><td>\(\operatorname{tg}(-\alpha) = -\operatorname{tg}\alpha\)</td></tr>
+        <tr><td>\(\operatorname{ctg}(-\alpha) = -\operatorname{ctg}\alpha\)</td></tr>
+    </table>
+</div>
+
+<!-- 3. Формулы сложения и вычитания -->
+<div class="section">
+    <h2>3. Формулы сложения и вычитания</h2>
+    <table>
+        <tr><td>\(\sin(\alpha \pm \beta) = \sin\alpha\cos\beta \pm \cos\alpha\sin\beta\)</td></tr>
+        <tr><td>\(\cos(\alpha \pm \beta) = \cos\alpha\cos\beta \mp \sin\alpha\sin\beta\)</td></tr>
+        <tr><td>\(\operatorname{tg}(\alpha \pm \beta) = \dfrac{\operatorname{tg}\alpha \pm \operatorname{tg}\beta}{1 \mp \operatorname{tg}\alpha \cdot \operatorname{tg}\beta}\)</td></tr>
+        <tr><td>\(\operatorname{ctg}(\alpha \pm \beta) = \dfrac{\operatorname{ctg}\alpha \cdot \operatorname{ctg}\beta \mp 1}{\operatorname{ctg}\beta \pm \operatorname{ctg}\alpha}\)</td></tr>
+    </table>
+</div>
+
+<!-- 4. Формулы двойного угла -->
+<div class="section">
+    <h2>4. Формулы двойного угла</h2>
+    <table>
+        <tr><td>\(\sin 2\alpha = 2\sin\alpha\cos\alpha\)</td></tr>
+        <tr><td>\(\cos 2\alpha = \cos^2\alpha - \sin^2\alpha = 2\cos^2\alpha - 1 = 1 - 2\sin^2\alpha\)</td></tr>
+        <tr><td>\(\operatorname{tg} 2\alpha = \dfrac{2\operatorname{tg}\alpha}{1 - \operatorname{tg}^2\alpha}\)</td></tr>
+        <tr><td>\(\operatorname{ctg} 2\alpha = \dfrac{\operatorname{ctg}^2\alpha - 1}{2\operatorname{ctg}\alpha}\)</td></tr>
+    </table>
+</div>
+
+<!-- 5. Формулы половинного аргумента -->
+<div class="section">
+    <h2>5. Формулы половинного аргумента</h2>
+    <table>
+        <tr><td>\(\sin^2\dfrac{\alpha}{2} = \dfrac{1 - \cos\alpha}{2}\)</td></tr>
+        <tr><td>\(\cos^2\dfrac{\alpha}{2} = \dfrac{1 + \cos\alpha}{2}\)</td></tr>
+        <tr><td>\(\operatorname{tg}^2\dfrac{\alpha}{2} = \dfrac{1 - \cos\alpha}{1 + \cos\alpha} = \dfrac{\sin\alpha}{1 + \cos\alpha} = \dfrac{1 - \cos\alpha}{\sin\alpha}\)</td></tr>
+        <tr><td>\(\operatorname{ctg}^2\dfrac{\alpha}{2} = \dfrac{1 + \cos\alpha}{1 - \cos\alpha} = \dfrac{1 + \cos\alpha}{\sin\alpha} = \dfrac{\sin\alpha}{1 - \cos\alpha}\)</td></tr>
+    </table>
+</div>
+
+<!-- 6. Формулы преобразования сумм и разностей в произведения -->
+<div class="section">
+    <h2>6. Преобразование сумм/разностей в произведения</h2>
+    <table>
+        <tr><td>\(\sin\alpha + \sin\beta = 2\sin\dfrac{\alpha+\beta}{2} \cdot \cos\dfrac{\alpha-\beta}{2}\)</td></tr>
+        <tr><td>\(\sin\alpha - \sin\beta = 2\cos\dfrac{\alpha+\beta}{2} \cdot \sin\dfrac{\alpha-\beta}{2}\)</td></tr>
+        <tr><td>\(\cos\alpha + \cos\beta = 2\cos\dfrac{\alpha+\beta}{2} \cdot \cos\dfrac{\alpha-\beta}{2}\)</td></tr>
+        <tr><td>\(\cos\alpha - \cos\beta = -2\sin\dfrac{\alpha+\beta}{2} \cdot \sin\dfrac{\alpha-\beta}{2}\)</td></tr>
+        <tr><td>\(\operatorname{tg}\alpha \pm \operatorname{tg}\beta = \dfrac{\sin(\alpha \pm \beta)}{\cos\alpha \cdot \cos\beta}\)</td></tr>
+        <tr><td>\(\operatorname{ctg}\alpha \pm \operatorname{ctg}\beta = \dfrac{\sin(\beta \pm \alpha)}{\sin\alpha \cdot \sin\beta}\)</td></tr>
+    </table>
+</div>
+
+<!-- 7. Формулы тройного угла -->
+<div class="section">
+    <h2>7. Формулы тройного угла</h2>
+    <table>
+        <tr><td>\(\sin 3\alpha = 3\sin\alpha - 4\sin^3\alpha\)</td></tr>
+        <tr><td>\(\cos 3\alpha = 4\cos^3\alpha - 3\cos\alpha\)</td></tr>
+        <tr><td>\(\operatorname{tg} 3\alpha = \dfrac{3\operatorname{tg}\alpha - \operatorname{tg}^3\alpha}{1 - 3\operatorname{tg}^2\alpha}\)</td></tr>
+        <tr><td>\(\operatorname{ctg} 3\alpha = \dfrac{\operatorname{ctg}^3\alpha - 3\operatorname{ctg}\alpha}{3\operatorname{ctg}^2\alpha - 1}\)</td></tr>
+    </table>
+</div>
+
+<!-- 8. Универсальная подстановка -->
+<div class="section">
+    <h2>8. Универсальная подстановка через тангенс половинного аргумента</h2>
+    <table>
+        <tr><td>\(\sin\alpha = \dfrac{2\operatorname{tg}\dfrac{\alpha}{2}}{1 + \operatorname{tg}^2\dfrac{\alpha}{2}}\)</td></tr>
+        <tr><td>\(\cos\alpha = \dfrac{1 - \operatorname{tg}^2\dfrac{\alpha}{2}}{1 + \operatorname{tg}^2\dfrac{\alpha}{2}}\)</td></tr>
+        <tr><td>\(\operatorname{tg}\alpha = \dfrac{2\operatorname{tg}\dfrac{\alpha}{2}}{1 - \operatorname{tg}^2\dfrac{\alpha}{2}}\)</td></tr>
+    </table>
+</div>
+
+<!-- 9. Преобразование произведений в суммы -->
+<div class="section">
+    <h2>9. Преобразование произведений в суммы (разности)</h2>
+    <table>
+        <tr><td>\(\sin\alpha \cdot \sin\beta = \dfrac{\cos(\alpha - \beta) - \cos(\alpha + \beta)}{2}\)</td></tr>
+        <tr><td>\(\cos\alpha \cdot \cos\beta = \dfrac{\cos(\alpha - \beta) + \cos(\alpha + \beta)}{2}\)</td></tr>
+        <tr><td>\(\sin\alpha \cdot \cos\beta = \dfrac{\sin(\alpha + \beta) + \sin(\alpha - \beta)}{2}\)</td></tr>
+        <tr><td>\(\operatorname{tg}\alpha \cdot \operatorname{tg}\beta = \dfrac{\operatorname{tg}\alpha + \operatorname{tg}\beta}{\operatorname{ctg}\alpha + \operatorname{ctg}\beta}\)</td></tr>
+        <tr><td>\(\operatorname{ctg}\alpha \cdot \operatorname{ctg}\beta = \dfrac{\operatorname{ctg}\alpha + \operatorname{ctg}\beta}{\operatorname{tg}\alpha + \operatorname{tg}\beta}\)</td></tr>
+    </table>
+</div>
+
+<p class="back-link" href="index.html">← Назад к оглавлению</p>
+</body>
+</html>

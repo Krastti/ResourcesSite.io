@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица производных</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>Таблица производных</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Функция</th>
+        <th>Производная</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr><td>\(c\)</td><td>\(0\)</td></tr>
+    <tr><td>\(x\)</td><td>\(1\)</td></tr>
+    <tr><td>\(x^n\)</td><td>\(n x^{n-1}\)</td></tr>
+    <tr><td>\(\sqrt{x}\)</td><td>\(\dfrac{1}{2\sqrt{x}}\)</td></tr>
+    <tr><td>\(\dfrac{1}{x}\)</td><td>\(-\dfrac{1}{x^2}\)</td></tr>
+    <tr><td>\(a^x\)</td><td>\(a^x \ln a\)</td></tr>
+    <tr><td>\(e^x\)</td><td>\(e^x\)</td></tr>
+    <tr><td>\(\log_a x\)</td><td>\(\dfrac{1}{x \ln a}\)</td></tr>
+    <tr><td>\(\ln x\)</td><td>\(\dfrac{1}{x}\)</td></tr>
+    <tr><td>\(\sin x\)</td><td>\(\cos x\)</td></tr>
+    <tr><td>\(\cos x\)</td><td>\(-\sin x\)</td></tr>
+    <tr><td>\(\tan x\)</td><td>\(\dfrac{1}{\cos^2 x}\)</td></tr>
+    <tr><td>\(\cot x\)</td><td>\(-\dfrac{1}{\sin^2 x}\)</td></tr>
+    <tr><td>\(\arcsin x\)</td><td>\(\dfrac{1}{\sqrt{1 - x^2}}\)</td></tr>
+    <tr><td>\(\arccos x\)</td><td>\(-\dfrac{1}{\sqrt{1 - x^2}}\)</td></tr>
+    <tr><td>\(\arctan x\)</td><td>\(\dfrac{1}{1 + x^2}\)</td></tr>
+    <tr><td>\(\operatorname{arccot} x\)</td><td>\(-\dfrac{1}{1 + x^2}\)</td></tr>
+    <tr><td>\(\sinh x\)</td><td>\(\cosh x\)</td></tr>
+    <tr><td>\(\cosh x\)</td><td>\(\sinh x\)</td></tr>
+    <tr><td>\(\tanh x\)</td><td>\(\dfrac{1}{\cosh^2 x}\)</td></tr>
+    <tr><td>\(\coth x\)</td><td>\(-\dfrac{1}{\sinh^2 x}\)</td></tr>
+    </tbody>
+</table>
+<p class="back-link"><a href="index.html">← Назад к оглавлению</a></p>
+</body>
+</html>
